@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import React from 'react';
+import PropTypes from 'prop-types';
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
@@ -17,12 +17,19 @@ const FeatureGrid = ({ gridItems }) => (
               <PreviewCompatibleImage imageInfo={item} />
             </div>
           </div>
+          <h4>{item.title}</h4>
           <p>{item.text}</p>
+          {item.link && (
+            <a href={`${item.link}`}>
+              <strong>Registration Link: </strong>
+              {item.link}
+            </a>
+          )}
         </section>
       </div>
     ))}
   </div>
-)
+);
 
 FeatureGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
@@ -31,6 +38,6 @@ FeatureGrid.propTypes = {
       text: PropTypes.string,
     })
   ),
-}
+};
 
-export default FeatureGrid
+export default FeatureGrid;
