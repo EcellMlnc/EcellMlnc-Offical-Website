@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
 import BlogRoll from '../components/BlogRoll';
+import Hero from '../components/Hero';
 
 export const IndexPageTemplate = ({
   image,
@@ -14,52 +15,7 @@ export const IndexPageTemplate = ({
   eventStatus,
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: 'center center',
-        backgroundSize: 'cover',
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              '0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(255, 152, 0, 0.46)',
-            backgroundColor: '#ff9800',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            backgroundColor: '#ff9800',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subTitle}
-        </h3>
-      </div>
-    </div>
+    <Hero image={image} title={title} description={subTitle} />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -149,6 +105,22 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
+            }
+            mobile: fixed(
+              width: 768
+              height: 240
+              quality: 80
+              cropFocus: CENTER
+            ) {
+              ...GatsbyImageSharpFixed_withWebp
+            }
+            desktop: fixed(
+              width: 1920
+              height: 280
+              quality: 95
+              cropFocus: SOUTH
+            ) {
+              ...GatsbyImageSharpFixed_withWebp
             }
           }
         }
