@@ -5,10 +5,10 @@ subTitle: We are mission oriented towards equipping our members with the skills 
 image: /img/team_photo.jpg
 eventStatus: Upcoming Events
 links:
-  facebook: ''
-  twitter: ''
-  linkedin: ''
   email: 'ecellmlnc@gmail.com'
+  facebook: 'https://www.facebook.com/ecellmlnc/'
+  linkedin: 'https://www.linkedin.com/company/ecellmlnc/'
+
 intro:
   blurbs:
     - image: /img/project_launch.jpg

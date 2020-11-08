@@ -97,7 +97,6 @@ export const pageQuery = graphql`
         subTitle
         links {
           facebook
-          twitter
           linkedin
           email
         }

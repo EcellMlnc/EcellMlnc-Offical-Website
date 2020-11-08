@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
+
 const Hero = (props) => {
   const { description, image, tag, title } = props;
 
