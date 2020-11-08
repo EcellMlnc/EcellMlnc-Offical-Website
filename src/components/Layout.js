@@ -5,8 +5,9 @@ import Navbar from '../components/Navbar';
 import './all.sass';
 import useSiteMetadata from './SiteMetadata';
 import { withPrefix } from 'gatsby';
+import './styles/style.css';
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, links }) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
@@ -42,7 +43,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div>{children}</div>
-      <Footer />
+      <Footer links={links} />
     </div>
   );
 };

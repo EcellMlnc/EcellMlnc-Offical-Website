@@ -50,6 +50,18 @@ collections:
           - { label: Image, name: image, widget: image }
           - { label: EventStatus, name: eventStatus, widget: string }
           - {
+              label: SocialLinks,
+              name: links,
+              widget: object,
+              fields:
+                [
+                  { label: Facebook, name: facebook, widget: string },
+                  { label: Twitter, name: twitter, widget: string },
+                  { label: Linkedin, name: linkedin, widget: string },
+                  { label: Email, name: email, widget: string },
+                ],
+            }
+          - {
               label: Intro,
               name: intro,
               widget: object,

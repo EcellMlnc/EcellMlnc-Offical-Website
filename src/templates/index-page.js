@@ -109,9 +109,9 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
+  console.log('frontmatter', frontmatter);
   return (
-    <Layout>
+    <Layout links={frontmatter.links}>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
@@ -139,6 +139,12 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subTitle
+        links {
+          facebook
+          twitter
+          linkedin
+          email
+        }
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

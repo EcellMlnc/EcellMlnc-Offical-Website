@@ -4,6 +4,11 @@ title: Entrepreneurship Cell | Motilal Nehru College, University of Delhi
 subTitle: We are mission oriented towards equipping our members with the skills they need to compete in this fast changing environment!
 image: /img/team_photo.jpg
 eventStatus: Upcoming Events
+links:
+  facebook: ''
+  twitter: ''
+  linkedin: ''
+  email: 'ecellmlnc@gmail.com'
 intro:
   blurbs:
     - image: /img/project_launch.jpg

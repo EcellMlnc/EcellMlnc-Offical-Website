@@ -5,6 +5,12 @@ module.exports = {
       'Entrepreneurship cell, motilal nehru college(mlnc) delhi university society offical website',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require('tailwindcss'), require('autoprefixer')],
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
