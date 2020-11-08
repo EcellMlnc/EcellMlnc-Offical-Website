@@ -36,6 +36,8 @@ FeatureGrid.propTypes = {
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       text: PropTypes.string,
+      title: PropTypes.string,
+      link: PropTypes.string,
     })
   ),
 };

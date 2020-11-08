@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import Features from '../components/Features';
+import Cards from '../components/Cards';
 import BlogRoll from '../components/BlogRoll';
 import Hero from '../components/Hero';
 
@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
                 <h3 className="has-text-weight-semibold is-size-2">
                   {eventStatus}
                 </h3>
-                <Features gridItems={intro.blurbs} />
+                <Cards gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/events">
