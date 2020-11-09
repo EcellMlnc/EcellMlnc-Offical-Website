@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  FaEnvelope,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaTwitter,
-} from 'react-icons/fa';
+import { FaEnvelope, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = ({ links }) => {
   return (

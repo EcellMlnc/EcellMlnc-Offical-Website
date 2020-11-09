@@ -1,23 +1,24 @@
-import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const Hero = (props) => {
-  const { description, image, tag, title } = props;
+  const { description, image, title } = props;
 
   return (
     <div className="container mt-12">
       <div className="flex relative rounded-md overflow-hidden bg-blue-400">
-        <Img
-          alt={title}
-          className="grayscale-1 blend-multiply"
-          fadeIn={false}
-          fixed={[
-            { ...image.childImageSharp.desktop, media: `(min-width: 768px)` },
-            { ...image.childImageSharp.mobile, media: `(max-width: 767px)` },
-          ]}
-        />
+        {!!image && !!image.childImageSharp ? (
+          <Img
+            alt={title}
+            className="grayscale-1 blend-multiply"
+            fadeIn={false}
+            fixed={[
+              { ...image.childImageSharp.desktop, media: `(min-width: 768px)` },
+              { ...image.childImageSharp.mobile, media: `(max-width: 767px)` },
+            ]}
+          />
+        ) : null}
 
         <div
           className="absolute inset-0"
