@@ -1,8 +1,9 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: About Us
 ---
+![Ecell mlnc team photo](/img/team_photo.jpg "Team Photo")
 
 The Entrepreneurship Cell, Motilal Nehru College is a non-profit
 students' organization that was initiated in November, 2017 under the
