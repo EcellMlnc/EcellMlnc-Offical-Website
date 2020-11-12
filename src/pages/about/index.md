@@ -6,7 +6,7 @@ title: About Us
 ![Ecell mlnc team photo](/img/team_photo.jpg "Team Photo")
 
 The Entrepreneurship Cell, Motilal Nehru College is a non-profit
-students' organization that was initiated in November, 2017 under the
+students' organisation that was initiated in November, 2017 under the
 umbrella of PM Yuva Scheme. PM Yuva scheme is a centrally sponsored
 Scheme on entrepreneurship education and training being implemented by
 the Ministry of Skill Development and Entrepreneurship, Government of
