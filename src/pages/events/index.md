@@ -1,32 +1,52 @@
 ---
-templateKey: 'event-page'
+templateKey: event-page
 path: /events
 title: Past Events
-image: /img/jumbotron.jpg
+image: /img/dsc02369.jpg
 intro:
   blurbs:
-    - image: /img/project_launch.jpg
-      title: Project Launch
-      text: >
-        This year, the Entrepreneurship Cell has been more active than ever as it was its first complete year. From organizing numerous seminars, workshops and events to starting two in-campus business ventures, it has done it all.
-    - image: /img/coffee-gear.png
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+    - title: TALAASH
+      text: |-
+        The event comprised of two events.
+        Beg, Borrow & Steal, which was a game of fun and thrill; and
+        The Brand Tambola, a game of knowledge and luck.
+      image: /img/dsc02397.jpg
+    - title: GENESIS 2.0
+      text: >-
+        MADVISTA
+
+        This event recognized the creative minds in the competitive world. Participants stepped into the real product world.
+
+
+        THE MYSTERIOUS TALE
+
+        This was an online event, that included brain-teasing quizzes.
+
+        The quizzes comprised of Pictionnaire and Mysterious tales to be solved.
+
+
+        MASTERMINDS
+
+        This event gave an opportunity to the participants to brag about their skills by showcasing their talent at the online poster-making competition.
+      image: /img/dsc02412.jpg
+    - title: E-GNITE
+      text: >-
+        For this time, the E-cell came up with its fresh 'E-GNITE 2.0' - Not
+        only a fest but also a feeling...
+
+
+        BART-O-PRENEUR
+
+        This event recalled the old barter system of trade in today's era and mixed it up with the current situations in the world.
+
+
+        YOUTHX
+
+        This event enlightened the audience with the words of wisdom by our renowned guest speakers-Mr. Rahul Saxena, Ms. Urvashi Kiran Sharma, and Mr.Rahul Kaushik
+
+
+        GOLDEN EGG
+
+        This event invited young entrepreneurs to provide them with the source of light and the opportunity to rise.
+      image: /img/dsc04811.jpg
 ---
